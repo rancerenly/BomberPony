@@ -26,9 +26,14 @@ namespace Creators
         /// <summary>
         /// Method that instantiates object on scene.
         /// </summary>
-        public virtual T Instantiate()
+        public virtual T Create()
         {
-            T instance = GameObject.Instantiate(prefab, Position, Rotation);
+            if (prefab == null)
+            {
+                return null;
+            }
+            
+            T instance = Instantiate(prefab, Position, Rotation);
             return instance;
         } 
     }
