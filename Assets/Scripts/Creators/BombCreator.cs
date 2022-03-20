@@ -15,12 +15,12 @@ namespace Creators
         }
 
         /// <inheritdoc/>
-        public override GameObject Instantiate()
+        public override GameObject Create()
         {
             Position = transform.position;
-            Rotation = transform.rotation;
+            Rotation = Quaternion.identity;
             
-            return base.Instantiate();
+            return base.Create();
         }
     }
 }
