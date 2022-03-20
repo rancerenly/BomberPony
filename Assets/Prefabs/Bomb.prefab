@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 561332566472192557}
   - component: {fileID: 4825502914436185136}
+  - component: {fileID: 8628649868473381403}
+  - component: {fileID: 1496440901800145663}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -82,3 +84,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8628649868473381403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194141115358962058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df15706d0b0471a8c4a389e360f1de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 1
+  destroyAfterwards: 1
+  restart: 0
+--- !u!114 &1496440901800145663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194141115358962058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c124162db2148beba3ea1454552577b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 301050561109952973, guid: 39d09e93e76d65a4fb5ff55af9f49aed, type: 3}
