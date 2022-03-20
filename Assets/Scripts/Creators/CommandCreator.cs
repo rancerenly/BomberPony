@@ -19,7 +19,7 @@ namespace Creators
         {
             if (callbackContext.performed)
             {
-                Instantiate();
+                Create();
             }
         }
     }
