@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 437364527}
   - component: {fileID: 437364526}
   - component: {fileID: 437364528}
+  - component: {fileID: 437364529}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -242,9 +243,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 437364524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c70812fee7aa43f1bd3822d92aa73a17, type: 3}
+  m_Script: {fileID: 11500000, guid: 0603cc830fdf4a8dbfef5674f7c15067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 1
+--- !u!114 &437364529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437364524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612bd5024fd24123bd4de079a94a8cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 437364528}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +355,7 @@ GameObject:
   - component: {fileID: 957892930}
   - component: {fileID: 957892929}
   - component: {fileID: 957892931}
+  - component: {fileID: 957892932}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -447,9 +463,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 957892927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c70812fee7aa43f1bd3822d92aa73a17, type: 3}
+  m_Script: {fileID: 11500000, guid: 0603cc830fdf4a8dbfef5674f7c15067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 1
+--- !u!114 &957892932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957892927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612bd5024fd24123bd4de079a94a8cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 957892931}
 --- !u!1 &1190210270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1724,9 @@ GameObject:
   - component: {fileID: 1325765825}
   - component: {fileID: 1325765824}
   - component: {fileID: 1325765827}
+  - component: {fileID: 1325765829}
+  - component: {fileID: 1325765828}
+  - component: {fileID: 1325765830}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1893,6 +1926,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1194141115358962058, guid: 74068de4cdd630243b7125595ecdc72b, type: 3}
   commandName: Bomb
+  timer: {fileID: 1325765830}
+--- !u!114 &1325765828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325765820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612bd5024fd24123bd4de079a94a8cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1325765829}
+--- !u!114 &1325765829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325765820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0603cc830fdf4a8dbfef5674f7c15067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+--- !u!114 &1325765830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325765820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df15706d0b0471a8c4a389e360f1de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0.1
+  destroyAfterwards: 0
+  restart: 0
 --- !u!1 &1498388963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +2057,7 @@ GameObject:
   - component: {fileID: 1997872121}
   - component: {fileID: 1997872120}
   - component: {fileID: 1997872123}
+  - component: {fileID: 1997872124}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -2089,6 +2165,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1997872119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c70812fee7aa43f1bd3822d92aa73a17, type: 3}
+  m_Script: {fileID: 11500000, guid: 0603cc830fdf4a8dbfef5674f7c15067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 1
+--- !u!114 &1997872124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997872119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612bd5024fd24123bd4de079a94a8cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1997872123}

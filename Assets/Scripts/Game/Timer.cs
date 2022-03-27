@@ -19,6 +19,11 @@ namespace Game
         /// </summary>
         public event Action<float> TimeChanged;
 
+        /// <summary>
+        /// Property that identifies if timer has stopped.
+        /// </summary>
+        public bool Stopped => t <= 0;
+        
         [SerializeField]
         [Tooltip("Timer time.")]
         private float time;
@@ -33,6 +38,15 @@ namespace Game
 
         private float t;
 
+        /// <summary>
+        /// Method used to restart the timer.
+        /// </summary>
+        public void Restart()
+        {
+            StopAllCoroutines();
+            StartCoroutine(Start());
+        }
+        
         private IEnumerator Start()
         {
             do
