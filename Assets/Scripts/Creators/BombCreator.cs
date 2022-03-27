@@ -5,7 +5,7 @@ namespace Creators
     /// <summary>
     /// Class responsible for spawning bombs.
     /// </summary>
-    public class BombCreator : CommandCreator<GameObject>
+    public class BombCreator : CommandTimerCreator<GameObject>
     {
         private new Transform transform;
 
