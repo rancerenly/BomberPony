@@ -5,10 +5,12 @@ public class Bomb : MonoBehaviour
 {
     [SerializeField]
     private float fuseTime;
+
+    private Timer timer;
     
     private void Start()
     {
-        Timer timer = new Timer(this, fuseTime);
+        timer = new Timer(this, fuseTime);
         timer.TimerFinished += OnExplode;
     }
 

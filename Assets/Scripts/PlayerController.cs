@@ -1,24 +1,12 @@
-using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : ControllerBase
 {
-    [SerializeField]
-    private float bombTimer;
-
-    [SerializeField]
-    private ObjectSpawner bombSpawner;
-
-    private Timer lastTimer;
-    
     public void OnBombPressed(InputAction.CallbackContext callbackContext)
     {
-        lastTimer ??= new Timer(this, 0);
-
-        if (callbackContext.ReadValueAsButton() && !lastTimer.IsRunning)
+        if (callbackContext.ReadValueAsButton())
         {
-            lastTimer.Restart(bombTimer);
-            bombSpawner.Spawn();
+            Bomb();
         }
     }
 }
