@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7002180139674635600}
-  - component: {fileID: 7764822825294305114}
-  - component: {fileID: 6795155207910392849}
   - component: {fileID: 1875661786528955094}
+  - component: {fileID: 9161855076336013717}
   m_Layer: 6
   m_Name: Explosion
   m_TagString: Untagged
@@ -37,75 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7764822825294305114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301050561109952973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5afbdfb099204e5ebace99b8026cc55d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rays:
-  - {fileID: 2019029079854849579}
-  - {fileID: 1666473565039939986}
-  - {fileID: 7390110144969717170}
-  - {fileID: 2307234686501227351}
-  maxDistance: 2
-  explosionCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: -0.00959386
-      outSlope: -0.00959386
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.49166667
-    - serializedVersion: 3
-      time: 0.5
-      value: 1
-      inSlope: -0
-      outSlope: Infinity
-      tangentMode: 97
-      weightedMode: 0
-      inWeight: 0.69166666
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.0047566197
-      outSlope: 0.0047566197
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.9916667
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  explosionMask:
-    serializedVersion: 2
-    m_Bits: 55
---- !u!114 &6795155207910392849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301050561109952973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4df15706d0b0471a8c4a389e360f1de7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 0.5
-  destroyAfterwards: 1
-  restart: 0
 --- !u!50 &1875661786528955094
 Rigidbody2D:
   serializedVersion: 4
@@ -127,6 +57,75 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &9161855076336013717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301050561109952973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a61a8fab76b4854839f8ec05d356907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rays:
+  - {fileID: 2019029079854849579}
+  - {fileID: 1666473565039939986}
+  - {fileID: 7390110144969717170}
+  - {fileID: 2307234686501227351}
+  animationTime: 0.2
+  xCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 6.226415
+      outSlope: 6.226415
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.05
+    - serializedVersion: 3
+      time: 1
+      value: 2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  yCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: -0.0054426836
+      outSlope: -0.0054426836
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.21666667
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -1.4465399
+      outSlope: -1.4465399
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.037500024
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &942638002397778572
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +137,6 @@ GameObject:
   - component: {fileID: 7390110144969717170}
   - component: {fileID: 1419363992297986191}
   - component: {fileID: 8342805824711406709}
-  - component: {fileID: 4133318783688703509}
   m_Layer: 6
   m_Name: RaySquare (2)
   m_TagString: Untagged
@@ -237,18 +235,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4133318783688703509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942638002397778572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51baa5c71ba743939e97c50398524088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1671779964977920157
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +246,6 @@ GameObject:
   - component: {fileID: 1666473565039939986}
   - component: {fileID: 5381327793990914949}
   - component: {fileID: 2757751473854097526}
-  - component: {fileID: 8637137313367907531}
   m_Layer: 6
   m_Name: RaySquare (1)
   m_TagString: Untagged
@@ -359,18 +344,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8637137313367907531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671779964977920157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51baa5c71ba743939e97c50398524088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6172818819668447271
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +355,6 @@ GameObject:
   - component: {fileID: 2307234686501227351}
   - component: {fileID: 1828567878275167727}
   - component: {fileID: 123464163396131800}
-  - component: {fileID: 5206921559667460309}
   m_Layer: 6
   m_Name: RaySquare (3)
   m_TagString: Untagged
@@ -481,18 +453,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5206921559667460309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6172818819668447271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51baa5c71ba743939e97c50398524088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6183550904510003675
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +464,6 @@ GameObject:
   - component: {fileID: 2019029079854849579}
   - component: {fileID: 7025180242439146016}
   - component: {fileID: 6260707962671245272}
-  - component: {fileID: 1331532804600869046}
   m_Layer: 6
   m_Name: RaySquare
   m_TagString: Untagged
@@ -603,15 +562,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1331532804600869046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6183550904510003675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51baa5c71ba743939e97c50398524088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
