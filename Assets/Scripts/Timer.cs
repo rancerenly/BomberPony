@@ -31,7 +31,7 @@ public class Timer
         {
             time -= Time.deltaTime;
             TimeChanged?.Invoke(time);
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
         
         IsRunning = false;

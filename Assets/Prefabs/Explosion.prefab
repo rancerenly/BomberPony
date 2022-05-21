@@ -125,7 +125,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   layerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 129
 --- !u!1 &942638002397778572
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 7390110144969717170}
   - component: {fileID: 1419363992297986191}
   - component: {fileID: 8342805824711406709}
+  - component: {fileID: 188511900718039071}
   m_Layer: 6
   m_Name: RaySquare (2)
   m_TagString: Untagged
@@ -235,6 +236,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &188511900718039071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942638002397778572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0714b1a1d91a4244b882d9296eca863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  processOnUpdate: 1
 --- !u!1 &1671779964977920157
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +260,7 @@ GameObject:
   - component: {fileID: 1666473565039939986}
   - component: {fileID: 5381327793990914949}
   - component: {fileID: 2757751473854097526}
+  - component: {fileID: 2259946585065507716}
   m_Layer: 6
   m_Name: RaySquare (1)
   m_TagString: Untagged
@@ -344,6 +359,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2259946585065507716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671779964977920157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0714b1a1d91a4244b882d9296eca863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  processOnUpdate: 1
 --- !u!1 &6172818819668447271
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +383,7 @@ GameObject:
   - component: {fileID: 2307234686501227351}
   - component: {fileID: 1828567878275167727}
   - component: {fileID: 123464163396131800}
+  - component: {fileID: 6238668331568570742}
   m_Layer: 6
   m_Name: RaySquare (3)
   m_TagString: Untagged
@@ -453,6 +482,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6238668331568570742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6172818819668447271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0714b1a1d91a4244b882d9296eca863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  processOnUpdate: 1
 --- !u!1 &6183550904510003675
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +506,7 @@ GameObject:
   - component: {fileID: 2019029079854849579}
   - component: {fileID: 7025180242439146016}
   - component: {fileID: 6260707962671245272}
+  - component: {fileID: 8632959673358207087}
   m_Layer: 6
   m_Name: RaySquare
   m_TagString: Untagged
@@ -562,3 +605,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8632959673358207087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183550904510003675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0714b1a1d91a4244b882d9296eca863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  processOnUpdate: 1
