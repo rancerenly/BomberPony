@@ -5,8 +5,7 @@ using UnityEngine.Audio;
 
 public class Settings : MonoBehaviour
 {
-    [SerializeField]
-    private AudioMixer am;
+    public AudioMixer am;
 
     public void AudioVolume(float sliderValue)
     {

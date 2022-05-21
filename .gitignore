@@ -24,7 +24,6 @@ ExportedObj/
 *.booproj
 .vs
 .vsconfig
-.idea
 
 # Ignore sln files by default, remove this directive if more advanced setup is required.
 *.sln
