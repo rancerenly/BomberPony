@@ -6,14 +6,16 @@ using UnityEngine.UI;
 
 public class PrintText : MonoBehaviour
 {
-    public TextMeshProUGUI textGameObject;
-    public string text = "Some text for test feature...";
-    void Start()
+    [SerializeField]
+    private TextMeshProUGUI textGameObject;
+
+    private string text = "Some text for test feature...";
+    private void Start()
     {
         StartCoroutine(TextCoroutine());
     }
 
-    IEnumerator TextCoroutine()
+    private IEnumerator TextCoroutine()
     {
         foreach (char symbol in text)
         {
