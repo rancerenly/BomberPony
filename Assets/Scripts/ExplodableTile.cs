@@ -4,6 +4,6 @@ public class ExplodableTile : MonoBehaviour, IExplodable
 {
     public void Explode()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
