@@ -15,8 +15,18 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
+<<<<<<< HEAD
   m_ExposedParameters: []
   m_AudioMixerGroupViews: []
+=======
+  m_ExposedParameters:
+  - guid: 8f1410df850c81546a1c882f8821392c
+    name: masterVolume
+  m_AudioMixerGroupViews:
+  - guids:
+    - 05744f4867ddee54b93c35054122b76f
+    name: View
+>>>>>>> 39d93e0 (added menu into game)
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
@@ -27,10 +37,17 @@ AudioMixerGroupController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
+<<<<<<< HEAD
   m_GroupID: b5fd3cb24559e7b4987b50da1be42168
   m_Children: []
   m_Volume: e4ff5f46067369e4d8d769feedf09a62
   m_Pitch: f79af06f852da564f8cdd90ca5bb511e
+=======
+  m_GroupID: 05744f4867ddee54b93c35054122b76f
+  m_Children: []
+  m_Volume: 8f1410df850c81546a1c882f8821392c
+  m_Pitch: adce3eeb6cbc5974983abbea374383ce
+>>>>>>> 39d93e0 (added menu into game)
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
@@ -45,9 +62,15 @@ AudioMixerEffectController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
+<<<<<<< HEAD
   m_EffectID: c2f9e318082d0df4e98f0d2ad030e847
   m_EffectName: Attenuation
   m_MixLevel: e051df3d278ecb646a75efb31ecc46ce
+=======
+  m_EffectID: 54074aef8f69be440b196e4334b7b3a9
+  m_EffectName: Attenuation
+  m_MixLevel: 21c66f936876f894f802e4cb10abf697
+>>>>>>> 39d93e0 (added menu into game)
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -60,6 +83,13 @@ AudioMixerSnapshotController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
+<<<<<<< HEAD
   m_SnapshotID: ebd24f512e4976e4fbb4d8188d6e299c
   m_FloatValues: {}
+=======
+  m_SnapshotID: 3efe0eac1ce16b6469d933b79dcbfd31
+  m_FloatValues:
+    adce3eeb6cbc5974983abbea374383ce: 1
+    8f1410df850c81546a1c882f8821392c: -39.703533
+>>>>>>> 39d93e0 (added menu into game)
   m_TransitionOverrides: {}
