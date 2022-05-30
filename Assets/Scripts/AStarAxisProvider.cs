@@ -31,7 +31,6 @@ public class AStarAxisProvider : AxisProvider
     {
         if (target != null)
             yield return GetPath(target.position, path);
-        
         if (path.Count > 1)
         {
             Axis = (path[1] - transform.position).normalized;
