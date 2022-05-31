@@ -2,8 +2,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : ControllerBase
 {
-    public void OnBombPressed()
+    public void OnBombPressed(InputAction.CallbackContext callbackContext)
     {
-        Bomb();
+        if (callbackContext.ReadValueAsButton())
+        {
+            Bomb();
+        }
     }
 }
