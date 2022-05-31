@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e237ec7d1e98db244b2eb1a3362689a0
+=======
+guid: 164828c40c8664c4e9e5d400493e6d43
+>>>>>>> 39d93e0 (added menu into game)
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

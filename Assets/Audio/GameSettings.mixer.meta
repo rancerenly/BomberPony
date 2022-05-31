@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a85c73a2618806d46a7971d23a308dc9
+=======
+guid: 28f0bc2a3b0548a419558b4f3f866fb9
+>>>>>>> 39d93e0 (added menu into game)
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 24100000

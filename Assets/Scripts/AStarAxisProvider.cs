@@ -29,8 +29,8 @@ public class AStarAxisProvider : AxisProvider
 
     private IEnumerator GetPathToTarget()
     {
-        yield return GetPath(target.position, path);
-        
+        if (target != null)
+            yield return GetPath(target.position, path);
         if (path.Count > 1)
         {
             Axis = (path[1] - transform.position).normalized;
