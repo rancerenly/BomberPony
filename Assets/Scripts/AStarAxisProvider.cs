@@ -56,5 +56,14 @@ public class AStarAxisProvider : AxisProvider
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, bombRadius);
+
+        Gizmos.color = Color.magenta;
+        for (int i = 0; i < path.Count - 1; ++i)
+        {
+            Vector3 a = path[i];
+            Vector3 b = path[i + 1];
+
+            Gizmos.DrawLine(a, b);
+        }
     }
 }
